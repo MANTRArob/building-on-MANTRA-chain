@@ -1,6 +1,7 @@
-pub mod contract;
-mod error;
-pub mod msg;
-pub mod state;
+pub mod contract; // Public module for handling contract execution logic
+mod error;        // Private module for defining custom error types
+pub mod msg;       // Public module for message and query definitions
+pub mod state;      // Public module for state management
 
-pub use crate::error::ContractError;
+// Re-export ContractError for convenient use
+pub use crate::error::ContractError;  
